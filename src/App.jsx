@@ -1,14 +1,20 @@
+import { ConnectKitProvider } from 'connectkit';
+import { WagmiConfig } from 'wagmi';
 import { AppLayout } from './components/ui/layouts'
+import { config } from './config/wagmi'
 import { Home } from './pages'
 
-function App() {  
-  return (    
-      <AppLayout>
-        <h1 className="text-3xl font-bold underline">
-        Esta es la aplicación descentralizada para PrestamoDeFi creado por Super Puri!</h1>
-        <Home />
-      </AppLayout>
-  )      
-}
 
+function App() {    
+  return (  
+      <WagmiConfig config={config}>       
+        <ConnectKitProvider mode='light'>
+          <AppLayout>
+            <Home />            
+          </AppLayout>
+        </ConnectKitProvider>
+      </WagmiConfig>
+      )
+    }   
+    
 export default App
