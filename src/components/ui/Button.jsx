@@ -5,10 +5,10 @@ export default function Button({ type = 'button', onClick, disabled, children, i
   return (
     <button
       type={type}
-      className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg disabled:opacity-75 disabled:cursor-not-allowed"
-      onClick={onClick}
-      disabled={disabled}
-    >
+
+      className= "flex items-center gap-3 bg-indigo-500 hover:bg-indigo-700 p-2 px-4 w-fit rounded-lg tex xs text-white  ">
+           
+    
       <span className="flex items-center gap-2 justify-center">
         {isLoading && <LoadingSpinner className="h-6 w-6" />}
         {children}
