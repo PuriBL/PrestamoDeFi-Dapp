@@ -5,12 +5,12 @@ import { config } from './config/wagmi'
 import { Home } from './pages'
 
 
-function App() {    
-  return (  
+function App() {   
+   return (   
       <WagmiConfig config={config}>       
         <ConnectKitProvider mode='light'>
           <AppLayout>
-            <Home />            
+            <Home />           
           </AppLayout>
         </ConnectKitProvider>
       </WagmiConfig>
