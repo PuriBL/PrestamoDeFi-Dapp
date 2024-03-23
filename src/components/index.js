@@ -1,4 +1,4 @@
 export { default as Footer } from './Footer';
 export { default as Header } from './Header';
-export { default as Usuario } from './Usuario';
+export { default as Cliente } from './Cliente';
 
