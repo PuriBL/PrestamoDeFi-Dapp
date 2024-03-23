@@ -11,13 +11,13 @@ export default function Cliente() {
 
     // console.log('RESULTADO Cliente:', result) 
 
-    if (isLoading) return <div>Cargando... </div>
+    if (isLoading) return <div>Cargando... </div>  // esto no está funcionando
 
     // el dato ... data no me aparece, no he podido el formato 
     // ABI formatearlo de la clase 86 , en 1 hora 37 min.
 
     return (
-        <section className= "flex flex-col before:bg-white border shadow p-4 rounded w-[360px] sm:w-[469px]">
+        <section className= "flex flex-col bg-white border shadow p-4 rounded w-[360px] sm:w-[469px]">
             <Title>Usuario cliente :</Title>
            {isLoading ? <div>Cargando ...</div> : <p className="text-xs sm:text-sm bg-gray-300 p-2 rounded-md">{data}</p>}            
             
