@@ -1,5 +1,5 @@
 import {useAccount } from "wagmi"
-import { Usuario } from '../components'
+import { Cliente } from '../components'
 import {LoadingSpinner, Button, ErrorInfo, TextInput, Title } from '../components/ui'
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
           <TextInput />
         </div>
           <Title>Este es un titulo de muestra</Title> 
-          <Usuario />
+          <Cliente />
 
       </div>
     )    
