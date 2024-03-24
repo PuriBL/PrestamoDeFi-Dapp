@@ -1,4 +1,4 @@
-  import { ConnectKitButton } from 'connectkit';
+ import { ConnectKitButton } from 'connectkit';
   export default function Header() {
     return (      
       <header className="border-b shadow py-2 px-3 flex justify-between items-center">
@@ -7,7 +7,7 @@
         {/* Logo para version desktop */}
         <img src="public/png-clipart-recursos-blue-p-letter-illustration-thumbnail.png" width={200} className="hidden sm:flex" />
          {/* Botton de conexion wallet con prop showBalance para mostrar balance cuenta */}         
-         <ConnectKitButton showBalance />
+        <ConnectKitButton showBalance/> 
         <p>INICIO Y GESTIONES DE CLIENTE</p>
         
       </header>
