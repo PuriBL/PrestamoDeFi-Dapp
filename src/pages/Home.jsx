@@ -9,14 +9,13 @@ export default function Home() {
 
   if (isConnecting) return <div>Conectando de forma segura ...</div>
   //if (isDisconnected) return <div className='flex flex-col self-center sm:grid place-items-center px-3 py-20 md:px-5 gap-12 font-bold text-3xl sm:text-2xl md:text-3xl mb-2 bg-gradient-to-r from-pink-600 to-indigo-500 text-transparent bg-clip-text '>Banco Descentralizado - Finanzas Descentralizadas</div>    
-  
-  
+   
 
  if (isDisconnected) {
   return (
     <>
       <div className='flex flex-col self-center sm:grid place-items-center px-3 py-20 md:px-5 gap-12 font-bold text-3xl sm:text-2xl md:text-3xl mb-2 bg-gradient-to-r from-pink-600 to-indigo-500 text-transparent bg-clip-text'>
-         Banco Descentralizado - Finanzas Descentralizadas
+         Finanzas Descentralizadas - Solicita tu préstamo
       </div>
       <div className='text-center text-lg text-gray-950 mb-8'>
           Conecta tu wallet para comenzar
@@ -25,8 +24,7 @@ export default function Home() {
       </>
     )
 
- }
-     
+ }    
   
 
 return (  
