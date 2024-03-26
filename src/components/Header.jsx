@@ -1,3 +1,4 @@
+ import { Navbar } from '../components'; 
  import { ConnectKitButton } from 'connectkit';
   export default function Header() {
     return (      
@@ -7,9 +8,10 @@
         {/* Logo para version desktop */}
         <img src="public/png-clipart-recursos-blue-p-letter-illustration-thumbnail.png" width={200} className="hidden sm:flex" />
          {/* Botton de conexion wallet con prop showBalance para mostrar balance cuenta */}         
-        <ConnectKitButton showBalance/> 
-        <p>INICIO Y GESTIONES DE CLIENTE</p>
-        
+        <ConnectKitButton showBalance/>         
+
+        <Navbar />
+
       </header>
     )
 
