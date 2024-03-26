@@ -19,11 +19,9 @@ export default function Home() {
       </div>
       <div className='text-center text-lg text-gray-950 mb-8'>
           Conecta tu wallet para comenzar
-      </div>
-      
+      </div>      
       </>
     )
-
  }    
   
 
