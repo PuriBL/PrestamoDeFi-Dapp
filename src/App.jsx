@@ -4,18 +4,18 @@ import { AppLayout } from './components/ui/layouts'
 import { config } from './config/wagmi'
 import { Home } from './pages'
 //import { Routes, Route } from 'react-router-dom'
-//import { InicioAutenticacion } from './pages/Pagina1'
-//import { GestionUsuarios } from './pages/Pagina2'
-//import { OperacionesPretamos } from './pages/Pagina3'
+//import { InicioAutenticacion, GestionUsuarios, OperacionesPrestamos } from './pages'
 
-// los cambios desde el min. 28 en adelante de la clase 46 , no me valen 
+
+// los cambios desde el min. 28 en adelante de la clase 46 , no me valen aquí 
+// el resto de ficheros si los estoy creando desde el minuto 4
 
 
 function App() {   
    return (   
       <WagmiConfig config={config}>       
         <ConnectKitProvider mode='light'>
-          <AppLayout>            
+          <AppLayout>                      
             <Home />                    
           </AppLayout>
         </ConnectKitProvider>
